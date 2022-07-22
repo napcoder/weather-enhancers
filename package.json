@@ -9,8 +9,8 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "adb": "adb reverse tcp:9090 tcp:9090 && adb reverse tcp:3000 tcp:3000 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:8081 tcp:8081",
-    "lint": "eslint App.tsx components constants hooks navigation screens --ext .tsx --ext .ts",
-    "lint:fix": "eslint App.tsx components constants hooks navigation screens --fix --ext .tsx --ext .ts",
+    "lint": "eslint App.tsx components constants hooks navigation screens --ext .tsx,.ts,.js",
+    "lint:fix": "eslint App.tsx components constants hooks navigation screens --fix --ext .tsx,.ts,.js",
     "test": "jest --verbose",
     "test:watch": "yarn test -- --watch"
   },
