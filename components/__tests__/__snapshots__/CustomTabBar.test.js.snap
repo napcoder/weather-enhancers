@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomTabBar Snapshots renders correctly 1`] = `
+<View
+  accessibilityRole="menubar"
+  style={
+    Array [
+      Object {
+        "//": "#000",
+        "alignItems": "stretch",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 25,
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "marginHorizontal": 20,
+        "minHeight": 78,
+        "shadowColor": "#000",
+        "shadowOffset": Object {
+          "height": 10,
+          "width": 5,
+        },
+        "shadowOpacity": 0.17,
+        "shadowRadius": 20,
+      },
+    ]
+  }
+>
+  <View
+    accessibilityRole="menuitem"
+    accessibilityState={
+      Object {
+        "disabled": true,
+        "selected": true,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#01175f",
+        "borderBottomWidth": 2,
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingHorizontal": 22,
+      }
+    }
+  >
+    <Image
+      height={24}
+      isActive={true}
+      source={1}
+      style={
+        Array [
+          Object {
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      width={24}
+    />
+  </View>
+  <View
+    accessibilityRole="menuitem"
+    accessibilityState={
+      Object {
+        "disabled": false,
+        "selected": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingHorizontal": 22,
+      }
+    }
+  >
+    <Image
+      height={24}
+      isActive={false}
+      source={1}
+      style={
+        Array [
+          Object {
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      width={24}
+    />
+  </View>
+  <View
+    accessibilityRole="menuitem"
+    accessibilityState={
+      Object {
+        "disabled": false,
+        "selected": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingHorizontal": 22,
+      }
+    }
+  >
+    <Image
+      height={26}
+      isActive={false}
+      source={1}
+      style={
+        Array [
+          Object {
+            "height": 26,
+            "width": 22,
+          },
+        ]
+      }
+      width={22}
+    />
+  </View>
+</View>
+`;

@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomTabBarItem Snapshots Active renders correctly 1`] = `
+<View
+  accessibilityRole="menuitem"
+  accessibilityState={
+    Object {
+      "disabled": true,
+      "selected": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderBottomColor": "#01175f",
+      "borderBottomWidth": 2,
+      "justifyContent": "center",
+      "opacity": 1,
+      "paddingHorizontal": 22,
+    }
+  }
+>
+  <Image
+    height={24}
+    isActive={true}
+    source={1}
+    style={
+      Array [
+        Object {
+          "height": 24,
+          "width": 24,
+        },
+      ]
+    }
+    width={24}
+  />
+</View>
+`;
+
+exports[`CustomTabBarItem Snapshots Inactive renders correctly 1`] = `
+<View
+  accessibilityRole="menuitem"
+  accessibilityState={
+    Object {
+      "disabled": false,
+      "selected": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "opacity": 1,
+      "paddingHorizontal": 22,
+    }
+  }
+>
+  <Image
+    height={26}
+    isActive={false}
+    source={1}
+    style={
+      Array [
+        Object {
+          "height": 26,
+          "width": 22,
+        },
+      ]
+    }
+    width={22}
+  />
+</View>
+`;

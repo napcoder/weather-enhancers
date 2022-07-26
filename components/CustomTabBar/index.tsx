@@ -1,21 +1,16 @@
+import { useState, useCallback } from 'react'
 import { Platform } from 'react-native'
 import styled from 'styled-components/native'
 
-const StyledView = styled.View`
-  background-color: papayawhip;
-`
+import CustomTabBarItem from './CustomTabBarItem'
 
-const StyledText = styled.Text`
-  color: palevioletred;
-`
+type Ids = 'Home' | 'Location' | 'Search'
 
 const RootContainer = styled.View`
-  /* margin: 30px; */
+  margin-horizontal: 20px;
   min-height: 78px;
-  /* width: 374px; */
   border-radius: 25px;
   background-color: #ffffff;
-  /* box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.17); */
   flex-direction: row;
   justify-content: space-around;
   align-items: stretch;
@@ -31,13 +26,25 @@ const RootContainer = styled.View`
       elevation: 24;
     `,
   })};
-  /* shadow-color: rgba(0, 0, 0, 0.17); */
 `
 
+/**
+ * This component shows a tab bar with 3 button
+ * Buttons are easily pluggable but not plugged yet
+ */
 export default function CustomTabBar() {
+  const [selectedId, setSelectedId] = useState<Ids>('Home')
+  const handleSelect = useCallback((id: Ids) => {
+    setSelectedId(id)
+  }, [])
   return (
-    <RootContainer>
-      <StyledText>Prova</StyledText>
+    <RootContainer accessibilityRole="menubar">
+      {['Home', 'Search', 'Location'].map((value) => {
+        const id: Ids = value as Ids
+        return (
+          <CustomTabBarItem key={id} id={id} isActive={selectedId === id} onSelect={handleSelect} />
+        )
+      })}
     </RootContainer>
   )
 }
